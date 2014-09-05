@@ -93,7 +93,7 @@ class buddypresstallyc{
 	function custom_scripts(){
 		if(apply_filters('buddypresstallyc_custom_css', false) == true){
 			wp_dequeue_style( 'bp-legacy-css' );
-			wp_dequeue_script( 'bp-legacy-js' );
+			//wp_dequeue_script( 'bp-legacy-js' );
 			wp_enqueue_style( 'buddypress-tally-c', BUDDYPRESSTALLYC_URL . 'assets/css/buddypress.css' );
 		}
 	}

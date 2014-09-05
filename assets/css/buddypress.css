@@ -37,7 +37,6 @@ Hello, this is the BuddyPress Legacy stylesheet.
 #buddypress div.pagination {
 	background: transparent;
 	border: none;
-	color: #888;
 	font-size: 90%;
 	margin: 0;
 	position: relative;
@@ -1077,6 +1076,7 @@ a.bp-title-button {
 	opacity: 0.8;
 	padding: 0;
 }
+#buddypress #item-header-content span.activity{ margin-left:5px; }
 #buddypress span.user-nicename {
 	color: #777;
 	display: inline-block;
@@ -1102,7 +1102,8 @@ a.bp-title-button {
 }
 #buddypress div#item-header h2 {
 	line-height: 120%;
-	margin: 0 0 15px 0;
+	margin: 15px 0 20px 0;
+	font-size: 24px;
 }
 #buddypress div#item-header h2 a {
 	color: #777;
@@ -1111,6 +1112,9 @@ a.bp-title-button {
 #buddypress div#item-header img.avatar {
 	float: left;
 	margin: 0 15px 19px 0;
+	max-width: 100px;
+	border-radius: 100%;
+	border: solid 8px;
 }
 #buddypress div#item-header h2 {
 	margin-bottom: 5px;
@@ -1271,6 +1275,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	padding: 5px 10px;
 	text-decoration: none;
 }
+
 #buddypress div.item-list-tabs ul li a span {
 	background: #eee;
 	border-radius: 50%;
@@ -1513,6 +1518,57 @@ body.register #buddypress div.page ul {
 .widget.buddypress .bp-login-widget-user-links > div.bp-login-widget-user-link a {
 	font-weight: bold;
 }
+
+
+/*-------Main Nav---------*/
+#buddypress div#object-nav.item-list-tabs ul{ margin-bottom:20px; }
+#buddypress div#object-nav.item-list-tabs ul:before,
+#buddypress div#object-nav.item-list-tabs ul:after{ content:" "; clear:both; width:100%; display: table; }
+#buddypress div#object-nav.item-list-tabs ul li a{padding:0; margin:0; font-size:11px; text-transform:uppercase; color:inherit; }
+#buddypress div#object-nav.item-list-tabs ul li a:hover{ color:#1abc9c; border-color:#1abc9c !important; }
+#buddypress div#object-nav.item-list-tabs ul li.current  a{ background:#1abc9c; color:#FFF; opacity: 1; font-weight: normal; border-color:#1abc9c !important; }
+#buddypress div#object-nav.item-list-tabs{ overflow:visible; }
+#buddypress div#object-nav.item-list-tabs ul li a{ position:relative; border:solid 1px; margin-right:5px; margin-bottom:5px; padding:11px 15px; text-align:center; }
+#buddypress div#object-nav.item-list-tabs ul li a:before{font-family:'FontAwesome'; font-size:20px; clear:both; width:100%; display:block; margin-bottom:2px; }
+#buddypress div#object-nav.item-list-tabs ul li#activity-personal-li a:before{content:'\f03a';}
+#buddypress div#object-nav.item-list-tabs ul li#xprofile-personal-li a:before{content:'\f007';}
+#buddypress div#object-nav.item-list-tabs ul li#notifications-personal-li a:before{content:'\f05a'; font-size:24px;}
+#buddypress div#object-nav.item-list-tabs ul li#messages-personal-li a:before{content:'\f003';}
+#buddypress div#object-nav.item-list-tabs ul li#friends-personal-li a:before{content:'\f118';}
+#buddypress div#object-nav.item-list-tabs ul li#groups-personal-li a:before{content:'\f0c0';}
+#buddypress div#object-nav.item-list-tabs ul li#forums-personal-li a:before{content:'\f086';}
+#buddypress div#object-nav.item-list-tabs ul li#settings-personal-li a:before{content:'\f085';}
+#buddypress div#object-nav.item-list-tabs ul li .count,
+#buddypress div#object-nav.item-list-tabs ul li .no-count{ 
+	position:absolute; 
+	top:-9px; 
+	right:-4px; 
+	height:18px; 
+	width:18px; 
+	padding:0; 
+	text-align:center; 
+	line-height:18px;
+}
+
+
+
+/*-------Sub Nav---------*/
+#buddypress div.item-list-tabs#subnav ul li.last{ margin-top:-1px; }
+#buddypress div.item-list-tabs ul li.last select {max-width: 175px;padding: 6px 8px; width:auto !important;  }
+#buddypress div.item-list-tabs ul li.last label{  }
+
+
+
+/*-------Activity---------*/
+#buddypress #whats-new-avatar img,
+#buddypress #activity-stream .activity-avatar img,
+#buddypress div.ac-reply-avatar img{ width:60px; height:60px; border-radius: 5px; margin-left:0; }
+#buddypress #activity-stream .activity-header p{ margin-top:0; }
+#buddypress .activity-list li.mini{ font-size:100%; }
+#buddypress .activity-list .activity-content .activity-header img.avatar { float: none !important; margin: 0 5px 3px 0 !important; border-radius: 100%; }
+
+
+
 
 /*--------------------------------------------------------------
 4.0 - Media Queries
