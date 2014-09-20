@@ -1519,6 +1519,9 @@ body.register #buddypress div.page ul {
 	font-weight: bold;
 }
 
+/*-------Widgets---------*/
+body .widget.buddypress ul.item-list img.avatar{ width:45px; height:45px; }
+
 
 /*-------Main Nav---------*/
 #buddypress div#object-nav.item-list-tabs ul{ margin-bottom:20px; }
