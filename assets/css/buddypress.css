@@ -1520,6 +1520,8 @@ body.register #buddypress div.page ul {
 }
 
 /*-------Widgets---------*/
+body .widget.buddypress div.item-options{ margin:0; padding:0; margin-bottom:10px; }
+body .widget.buddypress ul.item-list li{ overflow:hidden; }
 body .widget.buddypress ul.item-list img.avatar{ width:45px; height:45px; }
 
 
