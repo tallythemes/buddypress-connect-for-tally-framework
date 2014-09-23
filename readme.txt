@@ -4,7 +4,7 @@ Donate link: http://tallythemes.com/
 Tags: buddypress, tallythemes, tally framework, buddypress connect
 Requires at least: 3.9
 Tested up to: 4.0
-Stable tag: 0.1
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,9 @@ Please see [http://tallythemes.com/how-to-install-wordpress-plugin/](http://tall
 
 
 == Changelog ==
+
+= 0.3 =
+* Version Bump
 
 = 0.2 =
 * Improve CSS

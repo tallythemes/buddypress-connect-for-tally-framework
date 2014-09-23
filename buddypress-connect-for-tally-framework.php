@@ -5,7 +5,7 @@
  * Description: Add basic BuddyPress templating and Style for  <strong> Tally Framework</strong>
  * Author:      TallyThemes
  * Author URI:  http://tallythemes.com/
- * Version:     0.2
+ * Version:     0.3
  * Text Domain: buddypresstallyc_textdomain
  * Domain Path: /languages/
  * Name Space: buddypresstallyc
@@ -22,7 +22,7 @@ define('BUDDYPRESSTALLYC', 'BuddyPress Connect For Tally Framework' );
 define('BUDDYPRESSTALLYC_URL', site_url(str_replace( $path_abs, '', $path_dir )) );
 define('BUDDYPRESSTALLYC_DRI', $path_dir );
 define('BUDDYPRESSTALLYC_TEMPLATE', BUDDYPRESSTALLYC_DRI.'template' );
-define('BUDDYPRESSTALLYC_VERSION', 0.2);
+define('BUDDYPRESSTALLYC_VERSION', 0.3);
 
 
 class buddypresstallyc{
