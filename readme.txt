@@ -22,5 +22,8 @@ Please see [http://tallythemes.com/how-to-install-wordpress-plugin/](http://tall
 
 == Changelog ==
 
+= 0.2 =
+* Improve CSS
+
 = 0.1 =
 * Initial commit
