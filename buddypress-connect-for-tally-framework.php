@@ -78,6 +78,8 @@ class buddypresstallyc{
 		add_action('wp_enqueue_scripts', array($this,'custom_scripts'));
 		
 		add_filter('option_tree_settings_args', array($this, 'add_theme_options'));
+		
+		add_action('tally_template_init', array($this,'add_page_content'));
 	}
 	
 	
@@ -180,6 +182,25 @@ class buddypresstallyc{
 		}
 		
 		return $sidebar_layout;
+	}
+	
+	
+	
+	
+	/** Make the page content *****************************************************/
+	/**
+	 * This function remove some unwanted post element from the theme
+	 *
+	 * @since 0.4
+	 *
+	 * @used with "tally_template_init" hook
+	 */
+	function add_page_content(){
+		if(bp_current_component()){
+			remove_all_actions('tally_loop');
+			add_action('tally_loop', 'tally_do_page_content');
+			
+		}
 	}
 	
 	
