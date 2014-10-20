@@ -22,6 +22,9 @@ Please see [http://tallythemes.com/how-to-install-wordpress-plugin/](http://tall
 
 == Changelog ==
 
+= 0.4 =
+* Fix templating issue
+
 = 0.3 =
 * Version Bump
 
