@@ -126,9 +126,10 @@ Hello, this is the BuddyPress Legacy stylesheet.
 	color: #555;
 	font-family: inherit;
 	font-size: 90%;
-	height: 20px;
+	height: 40px;
 	padding: 6px;
-	width: 98%;
+	width: 100%;
+	min-height:40px;
 }
 body.no-js #buddypress form#whats-new-form textarea {
 	height: 50px;
@@ -142,7 +143,7 @@ body.no-js #buddypress form#whats-new-form textarea {
 	margin-top: 12px;
 }
 #buddypress #whats-new-options {
-	overflow: auto;
+	overflow: hidden;
 	height: 0;
 }
 body.no-js #buddypress #whats-new-options {
@@ -260,7 +261,7 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 }
 #buddypress .activity-list .activity-content .activity-inner,
 #buddypress .activity-list .activity-content blockquote {
-	margin: 10px 10px 5px 0;
+	/*margin: 10px 10px 5px 0;*/
 	overflow: hidden;
 }
 #buddypress .activity-list li.new_forum_post .activity-content .activity-inner,
@@ -1099,6 +1100,7 @@ a.bp-title-button {
 #buddypress div#item-header div#item-header-content {
 	float: left;
 	margin-left: 0;
+	width:70%;
 }
 #buddypress div#item-header h2 {
 	line-height: 120%;
@@ -1144,7 +1146,7 @@ a.bp-title-button {
 	color: #aaa;
 	overflow: hidden;
 	margin: 15px 0 5px 0;
-	padding-bottom: 10px;
+	padding-bottom: 25px;
 }
 #buddypress div#item-header div#item-actions {
 	float: right;
@@ -1651,7 +1653,8 @@ body.sidebar-content #buddypress #members-list li{ width:47%; }
 #buddypress #groups-list li .item .item-title{ font-size:20px; }
 #buddypress #groups-list li .item .item-title a{ color:#303030; }
 #buddypress #groups-list li .item .item-desc{ overflow:hidden; font-size:100%; }
-
+#buddypress #members-group-list #member-list li{ overflow:hidden; }
+#buddypress #members-group-list #member-list li img{ width:70px; }
 
 /*-------Forums---------*/
 #buddypress div#item-header div#item-meta{font-size:100%; color:inherit;  }
